@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frost & Flour - Artisan Bakery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <style>
+      :root {
+        --primary-color: #685752;
+        --secondary-color: #685752;
+      }
+
+      .navbar,
+      .footer {
+        background-color: var(--primary-color) !important;
+      }
+
+      .navbar .nav-link,
+      .navbar-brand,
+      .footer {
+        color: white !important;
+      }
+
+      .hero-section {
+        background: linear-gradient(rgba(104, 87, 82, 0.7)), url(PIC/CAKE\ 1.jpg) center/cover;
+        min-height: 70vh;
+      }
+
+      .product-card {
+        transition: transform 0.3s;
+        border: 1px solid var(--primary-color);
+      }
+
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .contact-info {
+        white-space: pre-line;
+        line-height: 1.8;
+      }
+
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      @media (max-width: 768px) {
+        .hero-section {
+          min-height: 50vh;
+          background-position: 60% center;
+        }
+
+        .hero-section h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero-section p {
+          font-size: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"> Frost & Flour </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section d-flex align-items-center">
+      <div class="container text-center text-white">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold mb-4 text-shadow">Welcome to Frost & Flour</h1>
+            <p class="lead fs-4 text-shadow">
+              Indulge in our handcrafted cakes, baked with love and the finest ingredients. Whether you're celebrating a birthday, wedding, or simply craving a delightful treat, we have the perfect cake for every occasion.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Signature Cakes</h2>
+        <div class="row g-4">
+          <!-- Classic Red Velvet -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card product-card h-100">
+              <img src="PIC/CLASSIC REDVELVET.jpg" class="card-img-top" alt="Classic Red Velvet" />
+              <div class="card-body">
+                <h5 class="card-title">Classic Red Velvet</h5>
+                <p class="card-text">Lapisan lembut dengan cream cheese frosting klasik</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="h5 text-secondary">Rp 275.000</span>
+                  <button class="btn btn-outline-primary">+ Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CHOCOLATE INDULGENCE -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card product-card h-100">
+              <img src="PIC/CHOCOLATE INDULGENCE.jpg" class="card-img-top" alt="Chocolate Indulgence" />
+              <div class="card-body">
+                <h5 class="card-title">Chocolate Indulgence</h5>
+                <p class="card-text">Lapisan coklat premium dengan ganache meleleh</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="h5 text-secondary">Rp 325.000</span>
+                  <button class="btn btn-outline-primary">+ Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SIGNATURE CHEESECAKE -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card product-card h-100">
+              <img src="PIC/SIGNATURE CHEESECAKE.jpg" class="card-img-top" alt="Signature Cheesecake" />
+              <div class="card-body">
+                <h5 class="card-title">Signature Cheesecake</h5>
+                <p class="card-text">Cheesecake lembut dengan topping buah segar</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="h5 text-secondary">Rp 295.000</span>
+                  <button class="btn btn-outline-primary">+ Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CUPCAKE ASSORTMENTS -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card product-card h-100">
+              <img src="PIC/CUPCAKE ASSORTMENS.jpg" class="card-img-top" alt="Cupcake Assortments" />
+              <div class="card-body">
+                <h5 class="card-title">Cupcake Assortments</h5>
+                <p class="card-text">Set 9 cupcake dengan berbagai rasa premium</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="h5 text-secondary">Rp 225.000</span>
+                  <button class="btn btn-outline-primary">+ Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-- FIND US -->
+          <div class="col-md-4">
+            <h5>Find Us</h5>
+            <p class="contact-info">Jl. Puspita Indah No. 45, Kelurahan Mawar, Kecamatan Melati, Kota Sejahtera, Provinsi Sentosa, Indonesia 12345</p>
+            <p>Everyday : 09:00 AM - 10:00 PM</p>
+          </div>
+
+          <!-- CONTACT & FOLLOW US -->
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-whatsapp me-2"></i>081234567890</li>
+              <li><i class="bi bi-envelope me-2"></i>frostnflour@gmail.com</li>
+            </ul>
+
+            <h5 class="mt-4">Follow Us</h5>
+            <ul class="list-unstyled">
+              <li><i class="bi bi-instagram me-2"></i>@frostnflour</li>
+              <li><i class="bi bi-facebook me-2"></i>Frost n Flour</li>
+            </ul>
+          </div>
+
+          <!-- QUICK LINKS -->
+          <div class="col-md-4">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-white text-decoration-none">FAQ</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Shipping Policy</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="text-center mt-5 pt-4 border-top">
+          <p class="mb-0">Designed by S.A</p>
+          <p class="mb-0">© 2025 Frost & Flour. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
